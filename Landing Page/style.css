@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Germania+One&family=PT+Serif&family=Roboto+Slab&family=Tilt+Prism&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    font-family: 'PT Serif', serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    justify-content: space-between;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    transition: 0.4s linear;
+
+}
+
+.menu a:hover::before {
+    width: 90%;
+}
+
+.register a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: grey;
+    border-radius: 10px;
+    transition: 0.4s;
+
+}
+
+.register a:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.text {
+    max-width: 650px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:
+        translate(-50%, -60%);
+    justify-content: center;
+    text-align: center;
+}
+
+.text span {
+    letter-spacing: 2px;
+}
+
+.text h1 {
+    font-size: 3rem;
+}
+
+.text p {
+    font-size: 1.1rem;
+
+    font-weight: 300;
+}
+
+.text a {
+    text-decoration: none;
+    background: grey;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.text a:hover {
+    color: black;
+    box-shadow: 0 0 6px white;
+    outline: none;
+
+}
